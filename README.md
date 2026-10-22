@@ -1,13 +1,3 @@
-
-
-
-
-brew install hackrf for CLI, also dependency for HackRF cython wrapper
-pip instal python_hackrf
-
-
-
-
 # ECE 69500 Hardware-Software Security Semester Project: GPS Spoofing
 
 We will use a HackRF One to spoof GPS signals.
