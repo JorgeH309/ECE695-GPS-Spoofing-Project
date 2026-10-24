@@ -27,3 +27,13 @@ HackRF Documentation: https://hackrf.readthedocs.io/en/latest/index.html
 Cython wrapper for HackRF: https://github.com/GvozdevLeonid/python_hackrf
 
 Using HackRF One with Python API: https://pysdr.org/content/hackrf
+
+Paper using GPS-SDR-SIM: https://ieeexplore.ieee.org/document/11031326
+
+GPS-SDR-SIM Repo and Instructions: https://github.com/osqzss/gps-sdr-sim/tree/master
+
+Instructions to download dependencies for GNSS-SDR: https://github.com/gnss-sdr/gnss-sdr#homebrew
+
+Instructions to seting up GNSS-SDR by cloning repo: https://gnss-sdr.org/build-and-install/
+
+
