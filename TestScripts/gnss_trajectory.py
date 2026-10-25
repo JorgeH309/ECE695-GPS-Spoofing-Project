@@ -121,23 +121,24 @@ def generate_straight_line(
 
 
 
-# Testing
-generate_stationary(
-    output_path="CoordinateFiles/stationary.csv",
-    latitude=35.274015965,
-    longitude=137.014864092,
-    duration_s=20,
-    altitude_m=100,
-    sample_interval_s=0.1,
-)
+if __name__ == "__main__":
+    # Testing
+    generate_stationary(
+        output_path="./../CoordinateFiles/stationary.csv",
+        latitude=35.274015965,
+        longitude=137.014864092,
+        duration_s=20,
+        altitude_m=100,
+        sample_interval_s=0.1,
+    )
 
-generate_straight_line(
-    output_path="CoordinateFiles/moving_north.csv",
-    latitude=35.274015965,
-    longitude=137.014864092,
-    duration_s=20,
-    axis="latitude",
-    speed_mps=100,
-    altitude_m=100,
-    sample_interval_s=0.1,
-)
+    generate_straight_line(
+        output_path="./../CoordinateFiles/moving_north.csv",
+        latitude=35.274015965,
+        longitude=137.014864092,
+        duration_s=20,
+        axis="latitude",
+        speed_mps=100,
+        altitude_m=100,
+        sample_interval_s=0.1,
+    )
