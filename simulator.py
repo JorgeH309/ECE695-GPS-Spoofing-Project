@@ -6,13 +6,13 @@ def main():
     location = "25.544326,-80.410226,180"
 
     # Input GPS broadcast ephemeris file
-    ephemeris = "brdc2950.26n"
+    ephemeris = "./SatEphemerisData/brdc2950.26n"
 
     # Simulation duration (seconds)
     duration = "60"
 
     # Output IQ file
-    output = "gpssim.bin"
+    output = "./IQFiles/straight_line.bin"
 
     # IQ sample rate (Hz)
     sample_rate = "2500000"
@@ -20,11 +20,13 @@ def main():
     # Quantization: 8-bit I + 8-bit Q
     iq_bits = "8"
 
+    straight_line_csv = "./CoordinateFiles/moving_north.csv"
     command = [
-        "./gps-sdr-sim",
+        "./Executables/gps-sdr-sim",
         "-e", ephemeris,
-        "-l", location,
-        "-d", duration,
+        "-x", straight_line_csv,
+        #"-l", location,
+        #"-d", duration,
         "-s", sample_rate,
         "-b", iq_bits,
         "-o", output,

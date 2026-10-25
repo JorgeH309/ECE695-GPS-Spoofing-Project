@@ -16,6 +16,8 @@ Run the following using pip to install a Cython wrapper for the HackRF.
 python3 -m pip install python_hackrf
 ```
 
+# Interfacing with Paper's Algorithm
+Download original route from Google Maps or similar direction service. Decide on a spoofed route. Generate coordinates necessary to spoof receiver into taking the spoofed route. Place these coordinates into a CSV. 
 
 # Resources
 Hack RF One: https://greatscottgadgets.com/hackrf/one/
