@@ -12,7 +12,7 @@ def main():
     duration = "20"
 
     # Output IQ file
-    output = "./IQFiles/straight_line.bin"
+    output = "./IQFiles/stationary.bin"
 
     # IQ sample rate (Hz)
     sample_rate = "2500000"
@@ -20,7 +20,7 @@ def main():
     # Quantization: 8-bit I + 8-bit Q
     iq_bits = "8"
 
-    straight_line_csv = "./CoordinateFiles/moving_north.csv"
+    straight_line_csv = "./CoordinateFiles/stationary.csv"
     command = [
         "./Executables/gps-sdr-sim",
         "-e", ephemeris,
