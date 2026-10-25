@@ -9,7 +9,7 @@ def main():
     ephemeris = "./SatEphemerisData/brdc2950.26n"
 
     # Simulation duration (seconds)
-    duration = "60"
+    duration = "20"
 
     # Output IQ file
     output = "./IQFiles/straight_line.bin"
