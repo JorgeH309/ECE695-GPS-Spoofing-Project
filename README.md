@@ -16,6 +16,17 @@ Run the following using pip to install a Cython wrapper for the HackRF.
 python3 -m pip install python_hackrf
 ```
 
+The GPS-SDR-SIM open-source tool is used to generated a binary file of 8-bit IQ samples based on a given CSV file of latitude, longitude, altitude coordinates. The GNSS-SDR open-source tool is used to verify the IQ binary files, output on the terminal the coordinates it is receiving. The /Executables folder contains the executables to run these two pieces of software without needing to downloading the entire repository and its dependencies.
+
+The satellite ephemeris data binary file contains a days worth of GPS satellite position and velocity data, which is used by GPS-SDR-SIM to compute the simulated GPS signals received at a given coordinate on Earth.
+
+Once you have a CSV with coordinates you want to generate IQ samples for and begin delivering on the HackRF, run the following command:
+```sh
+python3 full_tx_pipeline.py CSV_FILE_PATH
+```
+
+The IQ binary file will be generated, and you will be prompted on whether you want to transfer those IQ samples to the HackRF for transmission. 
+
 # Interfacing with Paper's Algorithm
 Download original route from Google Maps or similar direction service. Decide on a spoofed route. Generate coordinates necessary to spoof receiver into taking the spoofed route. Place these coordinates into a CSV. 
 
