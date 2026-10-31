@@ -7,7 +7,7 @@ class HackRFTransmitter:
     def __init__(
         self,
         sample_rate=2_500_000,
-        frequency=100_000_000,
+        frequency=1_575_420_000,
         tx_gain=0,
         amp_enable=False,
         antenna_enable=False,
@@ -64,8 +64,8 @@ class HackRFTransmitter:
 
 if __name__ == "__main__":
     transmitter = HackRFTransmitter(
-        sample_rate=10_000_000,
-        frequency=100_000_000,
+        sample_rate=2_500_000,
+        frequency=1_575_420_000,
         tx_gain=0,
     )
 
