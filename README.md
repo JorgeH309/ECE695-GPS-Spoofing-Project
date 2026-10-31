@@ -27,6 +27,16 @@ python3 full_tx_pipeline.py CSV_FILE_PATH
 
 The IQ binary file will be generated, and you will be prompted on whether you want to transfer those IQ samples to the HackRF for transmission. 
 
+# Debugging IQ Files
+
+You can place the IQ samples binary file into the /IQFiles directory. In the gnss-rx.conf file in the /Executables folder, change the SignalSource.filename parameter to the name of the IQ binary file. GNSS-SDR is an open-source tool that takes in GPS signals in an IQ file and processes them to determine the receiving device's location. GNSS-SDR will use the the gnss-rx.conf file, and can be executed by running the following commands:
+```sh
+cd Executables/
+.gnss-sdr --config_file=./gnss-rx.conf
+```
+
+Tool logs and coordinates will begin to display on the terminal.
+
 # Interfacing with Paper's Algorithm
 Download original route from Google Maps or similar direction service. Decide on a spoofed route. Generate coordinates necessary to spoof receiver into taking the spoofed route. Place these coordinates into a CSV. 
 
