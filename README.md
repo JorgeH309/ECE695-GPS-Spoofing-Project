@@ -32,7 +32,7 @@ The IQ binary file will be generated, and you will be prompted on whether you wa
 You can place the IQ samples binary file into the /IQFiles directory. In the gnss-rx.conf file in the /Executables folder, change the SignalSource.filename parameter to the name of the IQ binary file. GNSS-SDR is an open-source tool that takes in GPS signals in an IQ file and processes them to determine the receiving device's location. GNSS-SDR will use the the gnss-rx.conf file, and can be executed by running the following commands:
 ```sh
 cd Executables/
-.gnss-sdr --config_file=./gnss-rx.conf
+./gnss-sdr --config_file=./gnss-rx.conf
 ```
 
 Tool logs and coordinates will begin to display on the terminal.
