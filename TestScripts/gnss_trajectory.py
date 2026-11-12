@@ -127,7 +127,7 @@ if __name__ == "__main__":
         output_path="./../CoordinateFiles/stationary.csv",
         latitude=35.274015965,
         longitude=137.014864092,
-        duration_s=20,
+        duration_s=40,
         altitude_m=100,
         sample_interval_s=0.1,
     )

@@ -7,9 +7,9 @@ from pathlib import Path
 # -----------------------------
 CENTER_FREQ = 1_575_420_000  # GPS L1 (Hz)
 SAMPLE_RATE = 2_500_000      # 2.5 MS/s
-DURATION = 20                # seconds
-GAIN = 40                    # dB; adjust to supported tuner gain
-FREQ_CORRECTION = 0          # PPM
+DURATION = 60                # seconds 
+GAIN = 1                    # dB; adjust to supported tuner gain
+FREQ_CORRECTION = -2          # PPM
 OUTPUT_FILE = Path("rtl_gps_l1.bin")
 
 

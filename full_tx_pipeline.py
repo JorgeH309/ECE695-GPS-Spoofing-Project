@@ -36,7 +36,9 @@ def main():
     command = [
         GPS_SDR_SIM,
         "-e", EPHEMERIS_FILE,
-        "-x", str(csv_path),
+        "-d", "110",
+        "-l", "25.544326,-80.410226,180",
+        #"-x", str(csv_path),
         "-s", str(SAMPLE_RATE),
         "-b", "8",
         "-o", OUTPUT_IQ_FILE,

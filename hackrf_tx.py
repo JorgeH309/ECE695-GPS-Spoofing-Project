@@ -8,7 +8,7 @@ class HackRFTransmitter:
         self,
         sample_rate=2_500_000,
         frequency=1_575_420_000,
-        tx_gain=0,
+        tx_gain=1,
         amp_enable=False,
         antenna_enable=False,
     ):
@@ -36,6 +36,7 @@ class HackRFTransmitter:
             "-x", str(self.tx_gain),
             "-a", "1" if self.amp_enable else "0",
             "-p", "1" if self.antenna_enable else "0",
+            #"-C", "15",
         ]
 
         print("Starting HackRF transmission...")
@@ -66,7 +67,6 @@ if __name__ == "__main__":
     transmitter = HackRFTransmitter(
         sample_rate=2_500_000,
         frequency=1_575_420_000,
-        tx_gain=0,
     )
 
     try:
